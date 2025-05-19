@@ -2,6 +2,7 @@
     --sourceHeading: 'PT Sans', sans-serif;
     --sourceParagraph: 'Open Sans', sans-serif;
     --primary: #784D3C;
+    --gray: #E1E1E1;
     --white: #FFFFFF;
     --black: #000000;
 }
@@ -25,7 +26,25 @@ body {
 .container {
     max-width: 120rem;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 1rem auto;
+}
+
+.button {
+    display: block;
+    font-family: var(--sourceHeading);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .button {
+        display: inline-block;
+    }
 }
 
 a {
@@ -120,4 +139,28 @@ img {
     display: block;
     font-size: 1.8rem;
     color: var(--white);
+}
+
+/* Main content */
+@media (min-width: 768px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 3rem;
+    }
+}
+
+/* Posts */
+.post {
+    border-bottom: 1px solid var(--gray);
+    margin-bottom: 2rem;
+}
+
+.post:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+.button--primary {
+    background-color: var(--black);
 }
