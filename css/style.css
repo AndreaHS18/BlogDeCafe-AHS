@@ -164,3 +164,7 @@ img {
 .button--primary {
     background-color: var(--black);
 }
+
+.button--primary:hover {
+    background-color: var(--primary);
+}
