@@ -39,6 +39,11 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 2rem;
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -248,4 +253,38 @@ img {
 .course:last-of-type {
     padding: 3rem 0;
     border-bottom: none;
+}
+
+/* Contact */
+.contact-bg {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form {
+    background-color: var(--white);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.field {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.field__label {
+    flex: 0 0 15rem; /* flex: crecimiento disminución width */
+}
+
+.field__input {
+    flex: 1;
+    border: 1px solid var(--gray);
+}
+
+.field__input--textarea {
+    height: 20rem;
 }
