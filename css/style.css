@@ -208,3 +208,23 @@ img {
     padding-bottom: 4rem;
     margin-top: 4rem;
 }
+
+/* About us */
+@media (min-width: 768px) {
+    /* Flexbox */
+    /* .about-us {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-us__image, .about-us__text {
+        flex: 0 0 calc(50% - 1rem);
+    } */
+
+    /* Grid */
+    .about-us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
