@@ -47,12 +47,21 @@ body {
     }
 }
 
+.button--primary, .button--secondary:hover {
+    background-color: var(--black);
+}
+
+.button--primary:hover, .button--secondary {
+    background-color: var(--primary);
+}
+
 a {
     text-decoration: none;
 }
 
 h1, h2, h3, h4 {
     font-family: var(--sourceHeading);
+    line-height: 1.2;
 }
 
 h1 {
@@ -161,10 +170,30 @@ img {
     margin-bottom: 0;
 }
 
-.button--primary {
-    background-color: var(--black);
+/* Courses */
+.courses {
+    list-style: none;
 }
 
-.button--primary:hover {
-    background-color: var(--primary);
+.widget-course {
+    border-bottom: 1px solid var(--gray);
+    margin-bottom: 2rem;
+}
+
+.widget-course:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.widget-course__label {
+    font-family: var(--sourceHeading);
+    font-weight: bold;
+}
+
+.widget-course__information {
+    font-weight: normal;
+}
+
+.widget-course__label, .widget-course__information {
+    font-size: 2rem;
 }
